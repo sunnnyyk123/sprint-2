@@ -8,7 +8,7 @@
 | Last Updated On | Version | Author           | Level           | Reviewer               |
 |-----------------|---------|------------------|-----------------|------------------------|
 | 11-08-2025      | V2.0    | Sunny Kumar      | Internal Review | Aman Raj               |
-|                 |         | Sunny Kumar      | L0              | Shikha                 |
+|                 |         | Sunny Kumar      | L0              | Shikha Tripathi                 |
 |                 |         | Sunny Kumar      | L1              | Kriti Nehra            |
 |                 |         | Sunny Kumar      | L2              | Ashwini Singh/Deepak Nishad |
 
