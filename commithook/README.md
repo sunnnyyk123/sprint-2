@@ -97,9 +97,7 @@ if ! grep -E -q "(^|[^A-Z0-9-])${REQUIRED_TICKET}([^A-Z0-9-]|$)" <<< "$COMMIT_ME
   exit 1
 fi
 
-# If you prefer to accept any JIRA ticket, comment the block above and use:
-# PROJECT_KEY="${PROJECT_KEY:-JIRA}"
-# if ! grep -E -q "${PROJECT_KEY}-[0-9]+" <<< "$COMMIT_MESSAGE_CONTENT"; then
+ "$COMMIT_MESSAGE_CONTENT"; then
 #   echo "ERROR: Commit message must include a ${PROJECT_KEY}-<number> ticket (e.g., ${PROJECT_KEY}-123)." >&2
 #   exit 1
 # fi
