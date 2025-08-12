@@ -22,7 +22,6 @@
 - [Why Commit Hooks](#why-commit-hooks)
 - [Workflow](#workflow)
 - [Step-by-step Setup Guide](#step-by-step-setup-guide)
-- [Demo: Review the Behavior](#demo-review-the-behavior)
 - [FAQ](#faq)  
 - [Contact Information](#contact-information)  
 - [References](#references)  
