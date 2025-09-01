@@ -1,7 +1,7 @@
-<img width="300" height="185" alt="image" src="https://github.com/user-attachments/assets/9eadff17-094e-461f-b57b-1a35fcabe046" />
 
 
-# Terraform Documentation: Static Module
+
+# AWS Pricing Calculator Documentation
 
 ## Author Information
 
@@ -27,19 +27,20 @@
 
 ## Purpose
 
-The purpose of this static setup is to provide a simple and quick way to define and provision infrastructure using a single Terraform file (main.tf). It is mainly suited for small projects, demos, or learning scenarios, where the goal is to keep everything in one place for easier visibility. However, it lacks scalability and reusability, so it should not be used for production-grade infrastructure.
+The AWS Pricing Calculator is a web-based tool that helps estimate the cost of using AWS services. It allows you to define resources like EC2 instances, S3 storage, RDS databases, and more, including their configurations, and then calculates the monthly estimated cost. This helps in planning budgets and comparing cost between different infrastructure options.
 
 ---
 ##  Structure
 
-All Terraform configurations are written in a single file, typically named main.tf.
+Estimate costs for multiple AWS services.
 
+Customize resource configurations.
 
-| Component             | Description                                                                                                       |
-| --------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| **Provider Block**    | Defines the cloud provider configuration (e.g., AWS in this case).                                                |
-| **Resources**         | Contains all infrastructure resources such as EC2, S3, etc.                                                       |
-| **No Separate Files** | Variables, outputs, and providers are all included inside `main.tf` instead of being split across multiple files. |
+Compare different service configurations.
+
+Export estimates in CSV or PDF for documentation and approval.
+
+Understand pricing components like On-Demand, Reserved Instances, storage, and data transfer costs.
 
 
 ---
@@ -72,14 +73,13 @@ If teams need to manage multiple environments, they must manually update values 
 ---
 ## Best Practices
 
-| Best Practice                                         | Why to Avoid Single File                |
-| ------------------------------------------------------- | ------------------------------------------ |
-| Keep for **small/demo projects only**                   | Not scalable for production.               |
-| Use **separate copies** for each environment (dev/prod) | Risk of overwriting configs.               |
-| Comment resources clearly                               | Hard to track changes in large files.      |
-| Transition to **modular structure** when project grows  | Avoids maintenance overhead.               |
-| Store code in **version control (Git)**                 | Single file makes collaboration difficult. |
+Always select the correct region; pricing varies by region.
 
+Include all resources: EC2, storage, database, network transfer.
+
+Use Reserved Instances or Savings Plans for long-term workloads.
+
+Regularly update estimates as your infrastructure grows.
 
 ---
 
