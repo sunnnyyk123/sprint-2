@@ -16,84 +16,75 @@
 ## Table of Contents
 
 1. [Introduction](#Introduction)
-2. [How to Use the AWS Pricing Calculator](#How-to-Use-the-AWS-Pricing-Calculator)
-3. [Step-by-Step Example: Estimating Costs for a Web Application](#Step-by-Step-Example:-Estimating-Costs-for-a-Web-Application)
-4. [Best Practices](#Best-Practices)
-5. [Contact Information](#contact-information)
-6. [References](#references)
+2. [What is AWS Pricing Calculator](#What-is-AWS-Pricing-Calculator)
+3. [Why AWS Pricing Calculator](#Why-AWS-Pricing-Calculator)
+4. [Step-by-Step Example: Estimating Costs for a Web Application](#Step-by-Step-Example:-Estimating-Costs-for-a-Web-Application)
+5. [Best Practices](#Best-Practices)
+6. [Contact Information](#contact-information)
+7. [References](#references)
 
 ---
-
 ## Introduction
+This documentation serves as a guide to walk you through the AWS Pricing Calculator. It explains how to estimate costs, explore different AWS services, and customize pricing scenarios to plan your cloud expenses effectively.
 
-The AWS Pricing Calculator is a free tool to estimate your AWS infrastructure costs. It helps you model your cloud architecture, select services, and generate cost estimates based on your requirements. Below is a concise guide with a step-by-step example.
+---
+## What is AWS Pricing Calculator
 
-## How to Use the AWS Pricing Calculator
+The AWS Pricing Calculator is a free tool to estimate your AWS infrastructure costs. It helps you model your cloud architecture, select services, and generate cost estimates based on your requirements.
+It also provides detailed cost breakdowns, making it easier to forecast and manage your cloud expenses.
 
-### Access the Calculator
-- Visit AWS Pricing Calculator.
-- No AWS account is required to start.
+---
+## Why AWS Pricing Calculator
+| Benefit                 | Description                                                                  |
+| ----------------------- | ---------------------------------------------------------------------------- |
+| **Cost Estimation**     | Provides accurate cost predictions for AWS services before deployment.       |
+| **Comparison**          | Lets you evaluate different service options and configurations side by side. |
+| **Budget Optimization** | Helps you plan and control expenses to avoid unexpected charges.             |
 
-### Create a New Estimate
-- Click "Create estimate" on the homepage.
-- Name your estimate for easy reference (e.g., "WebApp_Infra").
 
-### Add Services
-- Click "Add service" to select AWS services (e.g., EC2, S3, RDS).
-- Configure each service with details like region, instance type, storage, or usage patterns.
-
-### Configure Service Details
-- Specify parameters such as instance size, operating system, storage type, or data transfer.
-- Use the tool’s suggestions for common configurations or input custom values.
-
-### Review and Adjust
-- View the cost breakdown in the estimate summary.
-- Adjust configurations to optimize costs (e.g., reserved instances or Spot instances).
-
-### Save or Export
-- Save the estimate to share or revisit later (requires AWS account).
-- Export as CSV or PDF for documentation.
-
-### Analyze and Refine
-- Compare costs across regions or configurations.
-- Use the "Recommendations" feature for cost-saving suggestions.
-
+---
 ## Step-by-Step Example: Estimating Costs for a Web Application
 
-Scenario: Estimate costs for a simple web application using EC2 and S3 in the US East (N. Virginia) region.
+Scenario: Estimate costs for a simple web application using EC2 in the US East (Ohio) region.
 
 ### Start a New Estimate
-- Go to calculator.aws.
-- Click "Create estimate" and name it "WebApp_Cost_Estimate".
+
+- Go to calculator.aws. 
+- Click "Create estimate" and name it "ex: WebApp_Cost_Estimate".
+<img width="1297" height="428" alt="image" src="https://github.com/user-attachments/assets/700ec873-b090-469c-bfd5-b63be7518804" />
+
 
 ### Add EC2 Service
 - Select "Amazon EC2" from the service list.
-- Region: US East (N. Virginia).
-- Instance Type: t3.micro (2 vCPUs, 1 GiB RAM).
+- Region: US East (Ohio).
+- Instance Type: t2.large (2 vCPUs, 8 GiB RAM).
 - Operating System: Linux.
-- Usage: 730 hours/month (always on).
+- Usage: 100 hours/month (always on).
 - Pricing Strategy: On-Demand.
-
-### Add S3 Service
-- Select "Amazon S3".
-- Region: US East (N. Virginia).
-- Storage: 100 GB in Standard storage class.
-- Data Transfer: 10 GB/month out to the internet.
+<img width="1312" height="465" alt="image" src="https://github.com/user-attachments/assets/d4ad2751-7dbe-4787-b7f6-1248a59418ca" />
+<img width="1312" height="465" alt="image" src="https://github.com/user-attachments/assets/220221ff-7aa4-4580-b9af-6aea46adb0d9" />
+<img width="1312" height="465" alt="image" src="https://github.com/user-attachments/assets/fbe4a80d-8dfc-4161-86e3-1268cdb41018" />
 
 ### Review Estimate
-- Check the summary for EC2 (~$8.50/month for t3.micro) and S3 (~$2.30/month for storage + transfer).
-- Total estimated cost: ~$10.80/month.
+- Check the summary for EC2 (t2.large).
+
+<img width="1314" height="504" alt="image" src="https://github.com/user-attachments/assets/509ccd04-5828-461a-91f4-bad1252b6f72" />
+
 
 ### Export Estimate
 - Click "Export" to download as CSV for stakeholder review.
+here is the csv file:
+<img width="1314" height="504" alt="image" src="https://github.com/user-attachments/assets/4cb34a8c-eff8-4a1f-bbf0-3d86118fc425" />
+
 
 ## Best Practices
-- Explore Pricing Options: Compare On-Demand, Reserved, or Spot instances for EC2 to reduce costs.
-- Use Recommendations: Leverage AWS suggestions for cost optimization (e.g., Savings Plans).
-- Check Regional Variations: Costs vary by region; test multiple regions.
-- Update Regularly: Revisit estimates as your architecture or AWS pricing changes.
+| Best Practice                 | Description                                                                  |
+| ----------------------------- | ---------------------------------------------------------------------------- |
+| **Explore Pricing Options**   | Compare On-Demand, Reserved, or Spot instances for EC2 to find cost savings. |
+| **Use Recommendations**       | Leverage AWS suggestions like Savings Plans for optimized pricing.           |
+| **Check Regional Variations** | Costs differ across regions; test multiple regions for cheaper options.      |
+| **Update Regularly**          | Revisit and update estimates as your architecture or AWS pricing changes.    |
 
-For more details, refer to the AWS Pricing Calculator User Guide.
 
 
 
@@ -110,8 +101,8 @@ For more details, refer to the AWS Pricing Calculator User Guide.
 
 | Resource                     | Link |
 |-------------------------------|------|
-| AWS Pricing Calculator  Documentation         | [Visit](https://developer.hashicorp.com/terraform/language?utm_source=chatgpt.com) |
-| Basic module           | [Visit](https://registry.terraform.io/providers/hashicorp/aws/latest/docs?utm_source=chatgpt.com) |
+| AWS Pricing Calculator           | [Visit](https://calculator.aws/#/) |
+| Documentation of AWS Pricing Calculator           | [Visit](https://docs.aws.amazon.com/pricing-calculator/) |
 
 ---
 
