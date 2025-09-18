@@ -18,7 +18,7 @@
 1. [Introduction](#Introduction)
 2. [What is AWS Pricing Calculator](#What-is-AWS-Pricing-Calculator)
 3. [Why AWS Pricing Calculator](#Why-AWS-Pricing-Calculator)
-4. [Step-by-Step Example: Estimating Costs for a Web Application](#Step-by-Step-Example:-Estimating-Costs-for-a-Web-Application)
+4. [Step-by-Step Example: Estimating Costs for a Web Application](#Step-by-Step-Example-Estimating-Costs-for-a-Web-Application)
 5. [Best Practices](#Best-Practices)
 6. [Contact Information](#contact-information)
 7. [References](#references)
