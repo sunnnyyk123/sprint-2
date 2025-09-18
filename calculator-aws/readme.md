@@ -1,4 +1,5 @@
 
+<img width="300" height="168" alt="image" src="https://github.com/user-attachments/assets/4ed609c0-0d03-4296-9a1d-b578ba90bdb6" />
 
 
 # AWS Pricing Calculator Documentation
